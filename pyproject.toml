@@ -1,0 +1,30 @@
+[project]
+name = "slate"
+version = "0.1.0"
+description = "Slate — an AI workspace for understanding, exploring, and working with information."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.2",
+    "langchain-docling>=3.0.0",
+    "langgraph>=1.2.11",
+    "paddleocr>=3.7.0",
+    "paddlepaddle>=3.3.1",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "pypdf>=6.18.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "python-multipart>=0.0.32",
+    "sentence-transformers>=6.0.1",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
